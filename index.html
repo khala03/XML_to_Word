@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>XML to Word Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Преобразование XML в Word</h1>
+        <p>Загрузите XML-файл, извлеките данные и получите результат в формате DOCX.</p>
+        <input type="file" id="fileInput" accept=".xml">
+        <button id="processButton">Обработать файл</button>
+        <a id="downloadLink" style="display: none;"></a>
+    </div>
+
+    <!-- Подключаем docx.js из CDN (старая стабильная версия) -->
+    <script src="https://cdn.jsdelivr.net/npm/docx@7.7.0/build/index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
